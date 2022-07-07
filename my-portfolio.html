@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <head>
+    <title>Steve Tang</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./javascript/javascript.js" async></script>
+</head>
+
+<header>
+    <h1>Steve Tang</h1>
+    <nav>
+        <a href="#my-life">My Life</a>
+        <a href="#my-projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#educat">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<body>
+<main>
+    <div>
+        <div class="background_banner"></div>
+        <h1>Hi,</h1>
+        <h1>I'm Steve,</h1>
+        <h1>Web Developer</h1>
+    </div>
+    <div>
+        <img src="" alt="recent_picture">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="my-projects">
+        <h2>My Projects</h2>
+        <p>haven't made much projects will add more later on
+            <a href="./webpages/Projects.html">click here</a>.
+        </p><br><br><br><br>
+        <div>
+            projects images and links 
+        </div>
+    </div>
+    <div id="My_Life">
+        <h2>My Life</h2>
+        <div>
+          
+          <form class="bio-length-control" id="biolength">
+            <fieldset>
+              <legend>Bio Length:</legend>
+              <label for="bio-length">Choose Your Familiarity Level:</label>
+              <select id="familiarity-lvl" name="familiarity-lvl">
+                <option value="shortest" name="stranger">Stranger</option>
+                <option value="short" name="aquaintence">Aquaintence</option>
+                <option value="long" name="friend">Friend</option>
+                <option value="longest" name="my-fam">My Fam</option>
+              </select>
+          </fieldset>
+          </form>
+          <template id="bios">
+            <p data-length="shortest">
+              <strong>Steve Tang</strong> is quiet and reserve.  He enjoys observing the 
+              enviroment and sees what the world has to offer.  
+            </p>
+            <p data-length="short">
+              <strong>Steve Tang</strong> is friendly and kind.  He is helpful toward 
+              others and eagers to learn new things.  He loves to create and make systems 
+              to impove work and effiecency.  He loves to read in his spare time.
+            </p>
+            <p data-length="long">
+                <strong>Steve Tang</strong> is a jokester.  He loves to joke around and 
+                tease his friends.  His favorite type of beers, by far, are dark beers, 
+                but still enjoys a good IPA.  He is from Massachussetts, so you already 
+                know what are his favorite sport teams, the Celtics and the Patriots.  
+                So please don't tease him about Brady or The 2022 NBA finals. 
+            </p>
+            <p data-length="longest">
+              <strong>Steve Tang</strong> is a friend that is loyal to a fault.  He 
+              will be there when you are in need.  Once he treates you as family, 
+              he is a guy that will be there no matter what.  He will be there 
+              through thick or thin.  However, he does not take betrayal very lightly.  
+              He has a very small pockets of friends everywhere he goes.
+            </p>
+           
+          </template>
+            
+            <p class="bio">
+              <strong>Steve Tang</strong> is quiet and reserve.  He enjoys observing the 
+              enviroment and what the world has to offer.
+            </p>
+        </div>
+        <a href="./webpages/My_Life.html">My Life</a>
+        <br><br><br><br><br>
+    </div>
+    <div id="skills">
+
+        <h2>Skills</h2>
+            <a href="./webpages/Skills.html">Skills</a>
+            <p>
+            matlab
+            C++
+            HTML
+            CSS
+            </p>
+            <br><br><br><br><br>
+    </div>
+    <div id="ed">
+        <h2>Education</h2>
+        <p>
+        Dalhousie University
+        Clark University
+        QCC
+        Northeastern University
+        </p>
+        <a href="./webpages/Education.html">Education</a>
+        <br><br><br><br>
+    </div>
+    <div id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form" action="./assets/form/action_page.php" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Contact Form:</legend><br>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <label for="phone">Tel:</label>
+          <input type="tel" id="phone" name="phone" placeholder=" (123) 123-1234" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" required><br><br>
+          <input type="submit" value="submit">
+        </fieldset>
+      </form>
+      <a href="./webpages/Contact_Me.html">Contact</a>
+        
+      <br><br><br><br><br>
+    </div>
+  
+</main>
+
+</body>
+</html>
+
