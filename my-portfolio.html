@@ -9,6 +9,8 @@
   <script src="./javascript/javascript.js" async></script>
   </head>
 
+<body>
+
 <header>
     <h1>Steve Tang</h1>
     <nav>
@@ -19,11 +21,11 @@
         <a href="#contact">Contact</a>
     </nav>
 </header>
-<body>
+
 <main>
     <div>
         <canvas class="background_banner"></canvas>
-        <!--add individual color channging hoovering css-->
+        <!--add individual color changing hoovers css-->
         <h1>Hi,</h1>
         <h1>I'm Steve,</h1>
         <h1>Web Developer</h1>
@@ -46,10 +48,10 @@
             <details>some things about the project</details>
         </section>
     </div>
-    <div id="#my-life">
+    <div id="my-life">
         <h2>My Life</h2>
         <div>
-          
+          <!--create a javascript async with the form, and template to change bio-->
           <form class="bio-length-control" id="biolength">
             <fieldset>
               <legend>Bio Length:</legend>
@@ -86,7 +88,6 @@
               through thick or thin.  However, he does not take betrayal very lightly.  
               He has a very small pockets of friends everywhere he goes.
             </p>
-           
           </template>
             
             <p class="bio">
@@ -94,6 +95,7 @@
               enviroment and what the world has to offer.
             </p>
         </div>
+        <!--make more webpage????-->
         <a href="./webpages/My_Life.html">My Life</a>
         <br><br><br><br><br>
     </div>
@@ -123,15 +125,17 @@
     </div>
     <div id="contact">
       <h2>Contact</h2>
-      <form id="contact-form" action="./assets/form/action_page.php" method="post" autocomplete="on">
+      <form id="contact-form" action="./assets/form/contact_action_page.php" method="post" autocomplete="on">
         <fieldset>
-          <legend>Contact Form:</legend><br>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name"><br><br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email"><br><br>
-          <label for="phone">Tel:</label>
-          <input type="tel" id="phone" name="phone" placeholder=" (123) 123-1234" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" required><br><br>
+          <legend>Contact Form:</legend>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Full Name"><br>
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email" placeholder="E-mail"><br>
+          <label for="phone">Tel:</label><br>
+          <input type="tel" id="phone" name="phone" placeholder=" (123) 123-1234" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" required><br>
+          <label for="subject">Subject:</label><br>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:400px; width:400px"></textarea><br>
           <input type="submit" value="submit">
         </fieldset>
       </form>
