@@ -30,7 +30,14 @@ div {
     background-color: var(--primary);
     color: var(--secondary);
 }
-
+#banner {
+    display: flex;
+    justify-content: space-around;
+}
+#my-projects {
+    display: flex;
+    flex-wrap: nowrap;
+}
 .hover {
     display: inline-flex;
     flex-wrap: wrap;
