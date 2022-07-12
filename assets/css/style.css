@@ -5,10 +5,49 @@
     --variant-secondary: #4df6ff;
 
 }
-
-.background_banner {
-    background-image: ;
+* {
+    background-color: var(--primary);
+    color: var(--secondary);
 }
-main>div h1>span:hover {
-    color:var(--variant-secondary)
+body {
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    
+}
+main div {
+    display:flex;
+    flex-wrap: wrap;
+
+}
+div {
+    display: flex;
+    flex-wrap:nowrap;
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.hover {
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.hover:hover:nth-child(even) {
+    color:var(--variant-secondary);
+    font-style: oblique;
+}
+.hover:hover:nth-child(odd) {
+    color:var(--variant-primary);
+    font-style: oblique;
+}
+
+@media screen and (min-width: 768px){
+    
 }
