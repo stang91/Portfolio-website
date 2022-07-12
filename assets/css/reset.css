@@ -1,5 +1,44 @@
 *{
     background-color: white;
     color: black;
-    font-style: ;
+    font-style: normal;
+    font-weight: normal;
+}
+
+html, 
+body, 
+header, 
+main, 
+div, 
+h1, 
+h2, 
+p, 
+details, 
+form, 
+fieldset, 
+legend, 
+label, 
+option,
+select,
+a,
+span,
+ul,
+li
+ {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+input{
+    border:1px solid #b0b0b0;
+    padding:3px 5px 4px;
+    color:#979797;
+    width:190px;
+}
+ul, li{
+    list-style: none;
 }
