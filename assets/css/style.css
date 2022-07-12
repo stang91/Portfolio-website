@@ -1,7 +1,14 @@
 :root{
     --primary: black;
     --secondary: white;
-    --variant-primary: #4df6ff;
-    --variant-secondary:#3cff00;
+    --variant-primary: #3cff00;
+    --variant-secondary: #4df6ff;
+
 }
 
+.background_banner {
+    background-image: ;
+}
+main>div h1>span:hover {
+    color:var(--variant-secondary)
+}
