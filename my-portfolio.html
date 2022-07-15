@@ -7,7 +7,7 @@
   <title>Steve Tang</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <script src="./assets/javascript/javascript.js" async></script>
+  <script src="./assets/javascript/javascript.js" defer></script>
   </head>
 
 <body>
@@ -15,17 +15,17 @@
 <header>
     <h1>Steve Tang</h1>
     <nav>
-        <a href="#my-life">My Life</a>
-        <a href="#my-projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#educat">Education</a>
-        <a href="#contact">Contact</a>
+        <a class="nav" href="#my-life">My Life</a>
+        <a class="nav" href="#my-projects">Projects</a>
+        <a class="nav" href="#skills">Skills</a>
+        <a class="nav" href="#educat">Education</a>
+        <a class="nav" href="#contact">Contact</a>
     </nav>
 </header>
 
 <main>
-    <div id='banner'>
-        <h2>
+  <section id='banner'>
+        <div>
           <span class="hover">H</span><span class="hover">i</span><span class="hover">,</span>
           <br>
           <span class="hover">I</span><span class="hover">'</span><span class="hover">m </span>
@@ -33,24 +33,20 @@
           <br> 
           <span class="hover">T</span><span class="hover">a</span><span class="hover">n</span><span class="hover">g</span>
           <br>
-        </h2>
+        </div>
         <img src="" alt="recent_picture">
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="my-projects">
+    </section>
+  <section id="my-projects">
         <h2><a href="./assets/webpage/Projects.html">Projects</a></h2>
         <p>haven't made much projects will add more later on.
         </p><br><br><br><br>
         <section>
-            <h3>project title</h3>
+            <h3>Project Title</h3>
             <img src="" alt="project1">
             <details>some things about the project</details>
         </section>
-    </div>
-    <div id="my-life">
+    </section>
+  <section id="my-life">
         <h2><a href="./assets/webpage/My_Life.html">My Life</a></h2>
         <div>
           <!--create a javascript async with the form, and template to change bio-->
@@ -97,11 +93,10 @@
             </p>
         </div>
         <br><br><br><br><br>
-    </div>
-    <div id="skills">
+    </section>
+  <section id="skills">
         <h2><a href="./assets/webpage/Skills.html">Skills</a></h2>
             <ul>
-              <li>Matlab</li>
               <li>C++</li>
               <li>HTML</li>
               <li>CSS</li>
@@ -109,8 +104,8 @@
             </ul>
             <br><br><br><br><br>
             <!--make some thing cool and interactive with css in skills-->
-    </div>
-    <div id="educat">
+  </section>
+  <section id="educat">
         <h2><a href="./assets/webpage/Education.html">Education</a></h2>
         <ul>
         <li>Dalhousie University</li>
@@ -119,8 +114,8 @@
         <li>Northeastern University</li>
         </ul>
         <br><br><br><br>
-    </div>
-    <div id="contact">
+  </section>
+  <section id="contact">
       <h2><a href="./assets/webpage/Contact_Me.html">Contact</a></h2>
       <form id="contact-form" action="./assets/form/contact_action_page.php" method="post" autocomplete="on">
         <fieldset>
@@ -137,7 +132,7 @@
         </fieldset>
       </form>   
       <br><br><br><br><br>
-    </div>
+  </section>
   
 </main>
 

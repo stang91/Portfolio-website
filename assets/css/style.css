@@ -1,49 +1,51 @@
 :root{
-    --primary: black;
-    --secondary: white;
+    --primary: #000;
+    --secondary: #fff;
     --variant-primary: #3cff00;
     --variant-secondary: #4df6ff;
+    --variant2-primary: #808080; 
+    --variant2-secondary: #f0ffff;
+    --my-font: 'Times New Roman', Times, serif;
 
 }
 * {
-    background-color: var(--primary);
-    color: var(--secondary);
-}
-body {
-    
+    background-color: var(--secondary);
+    color: var(--primary);
+  
 }
 header {
     display: flex;
     justify-content: space-between;
+    border-bottom: solid var(--primary);
+    align-items: flex-end;
+    background-color: var(--variant2-primary);
+    padding: .5rem;
+    margin-bottom: .5rem;
+    position: sticky;
 }
-nav{
-    
+header nav a{
+    padding: .25rem;
+    margin: .25rem;
 }
-main div {
-    display:flex;
-    flex-wrap: wrap;
+header *{
+    background-color: var(--variant2-primary);
+    Color: var(--secondary);
 
 }
-div {
-    display: flex;
-    flex-wrap:nowrap;
-    background-color: var(--primary);
-    color: var(--secondary);
+header h1{
+    font-family: var(--my-font);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: .25rem;
 }
-#banner {
-    display: flex;
-    justify-content: space-around;
-}
-#my-projects {
-    display: flex;
-    flex-wrap: nowrap;
+
+header nav{
+    margin: .25rem;
 }
 .hover {
     display: inline-flex;
     flex-wrap: wrap;
     font-size: 2rem;
-    background-color: var(--primary);
-    color: var(--secondary);
 }
 
 .hover:hover:nth-child(even) {
