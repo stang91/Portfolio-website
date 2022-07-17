@@ -13,14 +13,14 @@
 <body>
 
 <header>
-    <h1>Steve Tang</h1>
-    <nav>
-        <a class="nav" href="#my-life">My Life</a>
-        <a class="nav" href="#my-projects">Projects</a>
-        <a class="nav" href="#skills">Skills</a>
-        <a class="nav" href="#educat">Education</a>
-        <a class="nav" href="#contact">Contact</a>
-    </nav>
+  <h1>Steve Tang</h1>
+  <nav>
+    <a class="nav" href="#my-life">My Life</a>
+    <a class="nav" href="#my-projects">Projects</a>
+    <a class="nav" href="#skills">Skills</a>
+    <a class="nav" href="#educat">Education</a>
+    <a class="nav" href="#contact">Contact</a>
+  </nav>
 </header>
 
 <main>
@@ -28,7 +28,7 @@
         <div id="intro">
           <span class="hover">H</span><span class="hover">i</span><span class="hover">,</span>
           <br>
-          <span class="hover">I</span><span class="hover">'</span><span class="hover">m </span>
+          <span class="hover">I</span><span class="hover">'</span><span class="hover" id="space1">m </span>
           <span class="hover">S</span><span class="hover">t</span><span class="hover">e</span><span class="hover">v</span><span class="hover">e</span>
           <br> 
           <span class="hover">T</span><span class="hover">a</span><span class="hover">n</span><span class="hover">g</span>
@@ -36,19 +36,21 @@
         </div>
         <img src="" alt="recent_picture">
   </section>
+  
   <section id="my-projects">
     <a href="./assets/webpage/Projects.html">Projects</a>
     <div>
       <p>haven't made much projects will add more later on.</p>
       <section>
-          <h3>Project Title</h3>
-          <img src="" alt="project1">
-          <details>some things about the project</details>
+        <img src="" alt="project1">
+        <h3>Project Title</h3>
+        <details>some things about the project</details>
       </section>
     </div>
   </section>
   <section id="my-life">
     <a href="./assets/webpage/My_Life.html">My Life</a>
+    <img src="" alt="recent_pic2">
     <div>
       <!--create a javascript async with the form, and template to change bio-->
       <form class="bio-length-control" id="biolength">
@@ -61,7 +63,7 @@
             <option value="long" name="friend">Friend</option>
             <option value="longest" name="my-fam">My Fam</option>
           </select>
-      </fieldset>
+        </fieldset>
       </form>
       <template id="bios">
         <p data-length="shortest">
@@ -88,10 +90,10 @@
           He has a very small pockets of friends everywhere he goes.
         </p>
       </template> 
-        <p class="bio">
-          <strong>Steve Tang</strong> is quiet and reserve.  He enjoys observing the 
-          enviroment and what the world has to offer.
-        </p>
+      <p class="bio">
+        <strong>Steve Tang</strong> is quiet and reserve.  He enjoys observing the 
+        enviroment and what the world has to offer.
+      </p>
     </div>
     <br><br><br><br><br>
   </section>
@@ -126,7 +128,7 @@
           <label for="email">E-mail:</label><br>
           <input type="email" id="email" name="email" placeholder="E-mail"><br>
           <label for="phone">Tel:</label><br>
-          <input type="tel" id="phone" name="phone" placeholder=" (123) 123-1234" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" required><br>
+          <input type="tel" id="phone" name="phone" placeholder="(123)123-1234" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" required><br>
           <label for="subject">Subject:</label><br>
           <textarea id="subject" name="subject" placeholder="Write something.."></textarea><br>
           <input type="submit" value="submit">

@@ -9,22 +9,22 @@
 
 }
 * {
-    background-color: var(--secondary);
-    color: var(--primary);
-  
+    background-color: var(--primary);
+    color: var(--secondary);  
 }
 /* headers*/
 header {
+    /*sticky position isn't working for some reason*/
+    position: sticky;
+    position: -webkit-sticky;
     display: flex;
     justify-content: space-between;
     border-bottom: solid var(--primary);
     align-items: flex-end;
     background-color: var(--variant2-primary);
-    padding: .5rem;
+    padding-bottom: .5rem;
     margin-bottom: .5rem;
-    /*sticky position isn't working for some reason*/
-    position: sticky;
-    position: -webkit-sticky;
+
 }
 header *{
     background-color: var(--variant2-primary);
@@ -46,13 +46,13 @@ main section {
 /* image banner with name hovers */
 main #banner{
     justify-content: space-around;
+    height: ;
 }
 .hover {
     display: inline-flex;
     flex-wrap: wrap;
     font-size: 2rem;
 }
-
 .hover:hover:nth-child(even) {
     color:var(--variant-secondary);
     font-style: oblique;
@@ -61,15 +61,33 @@ main #banner{
     color:var(--variant-primary);
     font-style: oblique;
 }
+.hover #space1{
+    padding-right: 2rem;
+}
 /* subcatagories titles */
 main section a{
     font-weight: bold;
     font-size: 1.25rem;
 }
-/* projects section */
-main #my-projects {
-    justify-content: space-evenly;
+main section div, main section ul, main section form{
+    margin: 1.5rem;
 }
+
+/* projects section */
+main #my-projects section{
+    display:flex;
+    flex-direction: column;
+}
+/* my life section */
+main #my-life{
+    justify-content: space-between;
+}
+main #my-life div{
+    display:flex;
+    flex-wrap: wrap;
+    width: 400px
+}
+
 @media screen and (min-width: 768px){
     
 }
