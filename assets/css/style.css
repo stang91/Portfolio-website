@@ -46,7 +46,6 @@ main section {
 /* image banner with name hovers */
 main #banner{
     justify-content: space-around;
-    height: ;
 }
 .hover {
     display: inline-flex;
