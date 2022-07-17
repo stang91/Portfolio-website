@@ -25,20 +25,16 @@
 
 <main>
   <section id='banner'>
-        <div id="intro">
-          <span class="hover">H</span><span class="hover">i</span><span class="hover">,</span>
-          <br>
-          <span class="hover">I</span><span class="hover">'</span><span class="hover" id="space1">m </span>
-          <span class="hover">S</span><span class="hover">t</span><span class="hover">e</span><span class="hover">v</span><span class="hover">e</span>
-          <br> 
-          <span class="hover">T</span><span class="hover">a</span><span class="hover">n</span><span class="hover">g</span>
-          <br>
-        </div>
-        <img src="" alt="recent_picture">
+    <div id="intro">
+      <div><span class="hover">H</span><span class="hover">i</span><span class="hover space1">,</span>
+      <span class="hover">I</span><span class="hover">'</span><span class="hover space1">m </span>
+      <span class="hover">S</span><span class="hover">t</span><span class="hover">e</span><span class="hover">v</span><span class="hover space1">e</span>
+     <span class="hover">T</span><span class="hover">a</span><span class="hover">n</span><span class="hover">g</span>
+    </div>
   </section>
   
   <section id="my-projects">
-    <a href="./assets/webpage/Projects.html">Projects</a>
+  <div class="section-title"><a href="./assets/webpage/Projects.html">Projects</a></div>
     <div>
       <p>haven't made much projects will add more later on.</p>
       <section>
@@ -49,8 +45,8 @@
     </div>
   </section>
   <section id="my-life">
-    <a href="./assets/webpage/My_Life.html">My Life</a>
-    <img src="" alt="recent_pic2">
+    <div class="section-title"><a href="./assets/webpage/My_Life.html">My Life</a></div>
+    <img src="./assets/images/angkor-wat-reflection-1280.jpg" alt="recent_pic2">
     <div>
       <!--create a javascript async with the form, and template to change bio-->
       <form class="bio-length-control" id="biolength">
@@ -95,10 +91,9 @@
         enviroment and what the world has to offer.
       </p>
     </div>
-    <br><br><br><br><br>
   </section>
   <section id="skills">
-    <a href="./assets/webpage/Skills.html">Skills</a>
+    <div class="section-title"><a href="./assets/webpage/Skills.html">Skills</a></div>
     <ul>
       <li>C++</li>
       <li>HTML</li>
@@ -109,17 +104,16 @@
     <!--make some thing cool and interactive with css in skills-->
   </section>
   <section id="educat">
-    <h2><a href="./assets/webpage/Education.html">Education</a></h2>
+    <div class="section-title"><a href="./assets/webpage/Education.html">Education</a></div>
     <ul>
-    <li>Dalhousie University</li>
-    <li>Clark University</li>
-    <li>QCC</li>
-    <li>Northeastern University</li>
+    <li>Dalhousie University - neuroscience</li>
+    <li>Clark University-MBA</li>
+    <li>QCC-electrical engineer</li>
+    <li>Northeastern University-computer engineer</li>
     </ul>
-    <br><br><br><br>
   </section>
   <section id="contact">
-    <h2><a href="./assets/webpage/Contact_Me.html">Contact</a></h2>
+    <div class="section-title"><a href="./assets/webpage/Contact_Me.html">Contact</a></div>
     <form id="contact-form" action="./assets/form/contact_action_page.php" method="post" autocomplete="on">
       <fieldset>
         <legend>Contact Form:</legend>
@@ -137,6 +131,9 @@
     <br><br><br><br><br>
   </section>
   
+  <footer>
+    &copy; <span>Steve Tang</span>
+  </footer>
 </main>
 
 </body>

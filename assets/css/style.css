@@ -23,8 +23,6 @@ header {
     align-items: flex-end;
     background-color: var(--variant2-primary);
     padding-bottom: .5rem;
-    margin-bottom: .5rem;
-
 }
 header *{
     background-color: var(--variant2-primary);
@@ -46,9 +44,14 @@ main section {
 /* image banner with name hovers */
 main #banner{
     justify-content: space-around;
+    height: 300px;
+    align-items: end;
+    justify-content: end;
+    background-image: url(../images/cambodia.jpeg);
+    position: relative;
 }
 .hover {
-    display: inline-flex;
+    display: inline-block;
     flex-wrap: wrap;
     font-size: 2rem;
 }
@@ -60,9 +63,23 @@ main #banner{
     color:var(--variant-primary);
     font-style: oblique;
 }
-#space1{
+.space1{
     padding-right: .5rem;
 }
+body main #banner img{
+    height: 250px;
+    width: fit-content;
+}
+body main div div {
+
+}
+body main div div *{
+    
+}
+
+
+
+
 /* subcatagories titles */
 main section a{
     font-weight: bold;
@@ -71,22 +88,33 @@ main section a{
 main section div, main section ul, main section form{
     margin: 1.5rem;
 }
+.section-title{
+    border-right: solid var(--secondary) 2px;
+    padding:2rem;
+    width: 5rem;
+}
 
 /* projects section */
 main #my-projects section{
     display:flex;
     flex-direction: column;
 }
-/* my life section */
-main #my-life{
-    justify-content: space-between;
+#my-life img{
+    height: 250px;
 }
-main #my-life div{
-    display:flex;
+/* my life section */
+ #my-life div{
     flex-wrap: wrap;
-    width: 400px
+}
+footer{
+    background-color:var(--variant2-primary);
+    display:flex;
+    justify-content: center;
 }
 
+footer *{
+    background-color: var(--variant2-primary);
+}
 @media screen and (min-width: 768px){
     
 }
