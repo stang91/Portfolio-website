@@ -31,6 +31,7 @@ header *{
     background-color: var(--variant2-primary);
     Color: var(--secondary);
 }
+/* styling the title heading */
 header h1{
     font-family: var(--my-font);
     font-weight: bold;
@@ -67,7 +68,7 @@ header h1{
     position: absolute;
     top: 0;
     right: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-left: 5rem;
 }
 /* The button used to open the sidebar */
@@ -90,9 +91,6 @@ header h1{
     padding: 20px;
 }
 
-
-
-
 main section {
     display: flex;
 }
@@ -103,42 +101,34 @@ main #banner{
     align-items: end;
     justify-content: end;
     background-image: url(../images/cambodia.jpeg);
-    background-size:cover;
+    background-size:100% 100%;
 }
-
+/* subtitle display*/
 .hover {
     display: inline-block;
     flex-wrap: wrap;
     font-size: 2rem;
     padding: .5rem 0 .5rem 0;
 }
+/* spacing before*/
 .left-hover{
     padding-left: .5rem;
 }
-.right-hover{
+/* spacing after and between words */
+.right-hover, .space1{
     padding-right:.5rem;
+}
+/* hovering styling and color */
+.hover:hover{
+    font-style: oblique;
+    font-weight: bolder;
 }
 .hover:hover:nth-child(even) {
     color:var(--variant-secondary);
-    font-style: oblique;
 }
 .hover:hover:nth-child(odd) {
     color:var(--variant-primary);
-    font-style: oblique;
 }
-.space1{
-    padding-right: .5rem;
-}
-
-body main div div {
-
-}
-body main div div *{
-    
-}
-
-
-
 
 /* subcatagories titles */
 main section a{
@@ -153,41 +143,52 @@ main section div, main section ul, main section form{
     padding-right:1rem;
     width: 7rem;
 }
-
-/* projects section */
-
-main #my-projects .project-list{
-    display: flex;
-   flex-wrap: wrap;
-    justify-content: space-between;
-}
-main #my-projects .project-list div{
-    display:flex;
-    flex-direction: column;
-}
-main #my-projects .project-list div h3, 
-main #my-projects .project-list div details{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#first-project{
-    display: flex;
-}
-#first-project img{
-    width: 100%;
-    height: auto;
-}
-
 /* my life section */
- #my-life .my-life-section{
+#my-life .my-life-section{
     display: flex;
 }
 .avatar {
     height: 200px;
     width: 200px;
 }
+/* projects section */
 
+main #my-projects .project-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+main #my-projects .project-list div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#first-project{
+    height: 50%;
+    width: 100%;
+}
+#my-projects #first-project img{
+    -webkit-mask-image: linear-gradient(black,transparent);
+    mask-image: linear-gradient(black,transparent);
+    width: 80%;
+    height: 50%;
+}
+#my-projects .project-list img{
+    -webkit-mask-image: linear-gradient(black,transparent);
+    mask-image: linear-gradient(black,transparent);
+    width: 25%;
+    height: 25%;
+}
+/* skill section */
+
+
+
+/* contact section */
+
+
+
+
+/* footer section */
 footer{
     background-color:var(--variant2-primary);
     display:flex;
@@ -198,36 +199,6 @@ footer *{
     background-color: var(--variant2-primary);
 }
 @media only screen and (max-width: 768px){
-
-     header {
-       
-    }
-    header *{
-  
-    }
-    header h1{
-       
-    }
-    header nav{
-       
-    }
-    img{
-       
-    }
-}
-@media only screen and (max-width: 640px){
-    header #main{
-        display:flex;
-        justify-content: space-between;
-
-    }
-    header *{
-
-    }
-    header h1{
-       
-        
-    }
     .sidebar {
         padding-top: 1rem;
     }
@@ -242,6 +213,41 @@ footer *{
     /* subtitle on banner */
     .hover {
         font-size: 1.5rem;
+    }
+    .avatar{
+        display: block;
+       height: 175px;
+       width: 175px;
+       margin: 0 auto 0 auto;
+    }
+    /* my life section */
+    #my-life .my-life-section{
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    main #my-projects .project-list{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
+@media only screen and (max-width: 640px){
+    .sidebar {
+        padding-top: .75rem;
+    }
+    .sidebar a {
+        font-size: .75rem;
+    }
+    .sidebar .closebutton {
+        font-size: 1.25rem;
+        right: .75rem;
+    }
+    /* banner */
+    /* subtitle on banner */
+    .hover {
+        font-size: 1.25rem;
     }
     .avatar{
         display: block;
