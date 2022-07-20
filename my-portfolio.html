@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,11 +14,11 @@
 
 <header>
   <h1>Steve Tang</h1>
-  <nav>
+  <nav >
+    <!-- add image for hidden menu -->
     <a class="nav" href="#my-life">My Life</a>
     <a class="nav" href="#my-projects">Projects</a>
     <a class="nav" href="#skills">Skills</a>
-    <a class="nav" href="#educat">Education</a>
     <a class="nav" href="#contact">Contact</a>
   </nav>
 </header>
@@ -26,70 +26,85 @@
 <main>
   <section id='banner'>
     <div id="intro">
-      <div><span class="hover">H</span><span class="hover">i</span><span class="hover space1">,</span>
+      <span class="hover left-hover">H</span><span class="hover">i</span><span class="hover space1">,</span>
       <span class="hover">I</span><span class="hover">'</span><span class="hover space1">m </span>
       <span class="hover">S</span><span class="hover">t</span><span class="hover">e</span><span class="hover">v</span><span class="hover space1">e</span>
-     <span class="hover">T</span><span class="hover">a</span><span class="hover">n</span><span class="hover">g</span>
-    </div>
-  </section>
-  
-  <section id="my-projects">
-  <div class="section-title"><a href="./assets/webpage/Projects.html">Projects</a></div>
-    <div>
-      <p>haven't made much projects will add more later on.</p>
-      <section>
-        <img src="" alt="project1">
-        <h3>Project Title</h3>
-        <details>some things about the project</details>
-      </section>
+      <span class="hover">T</span><span class="hover">a</span><span class="hover">n</span><span class="hover right-hover">g</span>
     </div>
   </section>
   <section id="my-life">
     <div class="section-title"><a href="./assets/webpage/My_Life.html">My Life</a></div>
-    <img src="./assets/images/angkor-wat-reflection-1280.jpg" alt="recent_pic2">
-    <div>
-      <!--create a javascript async with the form, and template to change bio-->
-      <form class="bio-length-control" id="biolength">
-        <fieldset>
-          <legend>Bio Length:</legend>
-          <label for="bio-length">Choose Your Familiarity Level:</label>
-          <select id="familiarity-lvl" name="familiarity-lvl">
-            <option value="shortest" name="stranger">Stranger</option>
-            <option value="short" name="aquaintence">Aquaintence</option>
-            <option value="long" name="friend">Friend</option>
-            <option value="longest" name="my-fam">My Fam</option>
-          </select>
-        </fieldset>
-      </form>
-      <template id="bios">
-        <p data-length="shortest">
+    <div class="my-life-section">
+      <img class="avatar" src="./assets/images/Image-2.png" alt="memoji-avatar">
+      <div class="my-life-bio-control">
+        <!--create a javascript async with the form, and template to change bio-->
+        <form class="bio-length-control" id="biolength">
+          <fieldset>
+            <legend>Bio Length:</legend>
+            <label for="bio-length">Choose Your Familiarity Level:</label>
+            <select id="familiarity-lvl" name="familiarity-lvl">
+              <option value="shortest" name="stranger">Stranger</option>
+              <option value="short" name="aquaintence">Aquaintence</option>
+              <option value="long" name="friend">Friend</option>
+              <option value="longest" name="da-fam">Da Fam</option>
+            </select>
+          </fieldset>
+        </form>
+        <template id="bios">
+          <p data-length="shortest">
+            <strong>Steve Tang</strong> is quiet and reserve.  He enjoys observing the 
+            enviroment and sees what the world has to offer.  
+          </p>
+          <p data-length="short">
+            <strong>Steve Tang</strong> is friendly and kind.  He is helpful toward 
+            others and eagers to learn new things.  He loves to create and make systems 
+            to impove work and effiecency.  He loves to read in his spare time.
+          </p>
+          <p data-length="long">
+              <strong>Steve Tang</strong> is a jokester.  He loves to joke around and 
+              tease his friends.  His favorite type of beers, by far, are dark beers, 
+              but still enjoys a good IPA.  He is from Massachussetts, so you already 
+              know what are his favorite sport teams, the Celtics and the Patriots.  
+              So please don't tease him about Brady or The 2022 NBA finals. 
+          </p>
+          <p data-length="longest">
+            <strong>Steve Tang</strong> is a friend that is loyal to a fault.  He 
+            will be there when you are in need.  Once he treates you as family, 
+            he is a guy that will be there no matter what.  He will be there 
+            through thick or thin.  However, he does not take betrayal very lightly.  
+            He has a very small pockets of friends everywhere he goes.
+          </p>
+        </template> 
+        <p class="bio">
           <strong>Steve Tang</strong> is quiet and reserve.  He enjoys observing the 
-          enviroment and sees what the world has to offer.  
+          enviroment and what the world has to offer.
         </p>
-        <p data-length="short">
-          <strong>Steve Tang</strong> is friendly and kind.  He is helpful toward 
-          others and eagers to learn new things.  He loves to create and make systems 
-          to impove work and effiecency.  He loves to read in his spare time.
-        </p>
-        <p data-length="long">
-            <strong>Steve Tang</strong> is a jokester.  He loves to joke around and 
-            tease his friends.  His favorite type of beers, by far, are dark beers, 
-            but still enjoys a good IPA.  He is from Massachussetts, so you already 
-            know what are his favorite sport teams, the Celtics and the Patriots.  
-            So please don't tease him about Brady or The 2022 NBA finals. 
-        </p>
-        <p data-length="longest">
-          <strong>Steve Tang</strong> is a friend that is loyal to a fault.  He 
-          will be there when you are in need.  Once he treates you as family, 
-          he is a guy that will be there no matter what.  He will be there 
-          through thick or thin.  However, he does not take betrayal very lightly.  
-          He has a very small pockets of friends everywhere he goes.
-        </p>
-      </template> 
-      <p class="bio">
-        <strong>Steve Tang</strong> is quiet and reserve.  He enjoys observing the 
-        enviroment and what the world has to offer.
-      </p>
+      </div>
+    </div>
+  </section>
+  <section id="my-projects">
+  <div class="section-title"><a href="./assets/webpage/Projects.html">Projects</a></div>
+    <div class="project-list">
+      <div id="first-project">
+        <img src="" alt="project1">
+        <h3>Project Title</h3>
+        <details>some things about the project</details>
+      </div>
+      <div>
+        <img src="" alt="project2">
+        <h3>Project Title</h3>
+        <details>some things about the project</details>
+      </div>
+      <div>
+        <img src="" alt="project3">
+        <h3>Project Title</h3>
+        <details>some things about the project</details>
+      </div>
+      <div>
+        <img src="" alt="project4">
+        <h3>Project Title</h3>
+        <details>some things about the project</details>
+      </div>
     </div>
   </section>
   <section id="skills">
@@ -102,15 +117,6 @@
     </ul>
     <br><br><br><br><br>
     <!--make some thing cool and interactive with css in skills-->
-  </section>
-  <section id="educat">
-    <div class="section-title"><a href="./assets/webpage/Education.html">Education</a></div>
-    <ul>
-    <li>Dalhousie University - neuroscience</li>
-    <li>Clark University-MBA</li>
-    <li>QCC-electrical engineer</li>
-    <li>Northeastern University-computer engineer</li>
-    </ul>
   </section>
   <section id="contact">
     <div class="section-title"><a href="./assets/webpage/Contact_Me.html">Contact</a></div>

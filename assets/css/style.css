@@ -48,12 +48,21 @@ main #banner{
     align-items: end;
     justify-content: end;
     background-image: url(../images/cambodia.jpeg);
+    background-size:cover;
     position: relative;
 }
+
 .hover {
     display: inline-block;
     flex-wrap: wrap;
     font-size: 2rem;
+    padding: .5rem 0 .5rem 0;
+}
+.left-hover{
+    padding-left: .5rem;
+}
+.right-hover{
+    padding-right:.5rem;
 }
 .hover:hover:nth-child(even) {
     color:var(--variant-secondary);
@@ -66,10 +75,7 @@ main #banner{
 .space1{
     padding-right: .5rem;
 }
-body main #banner img{
-    height: 250px;
-    width: fit-content;
-}
+
 body main div div {
 
 }
@@ -86,26 +92,35 @@ main section a{
     font-size: 1.25rem;
 }
 main section div, main section ul, main section form{
-    margin: 1.5rem;
+    margin: 1rem;
 }
 .section-title{
     border-right: solid var(--secondary) 2px;
-    padding:2rem;
-    width: 5rem;
+    padding-right:1rem;
+    width: 7rem;
 }
 
 /* projects section */
-main #my-projects section{
+
+main #my-projects .project-list{
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: space-around;
+}
+main #my-projects .project-list section{
     display:flex;
     flex-direction: column;
 }
-#my-life img{
-    height: 250px;
-}
+
 /* my life section */
- #my-life div{
-    flex-wrap: wrap;
+ #my-life .my-life-section{
+    display: flex;
 }
+.avatar {
+    height: 200px;
+    width: 200px;
+}
+
 footer{
     background-color:var(--variant2-primary);
     display:flex;
@@ -115,6 +130,50 @@ footer{
 footer *{
     background-color: var(--variant2-primary);
 }
-@media screen and (min-width: 768px){
-    
+@media only screen and (max-width: 768px){
+
+     header {
+       
+    }
+    header *{
+  
+    }
+    header h1{
+       
+    }
+    header nav{
+       
+    }
+    img{
+       
+    }
+}
+@media only screen and (max-width: 640px){
+    header {
+        
+    }
+    header *{
+       
+    }
+    header h1{
+       
+        
+    }
+    header nav :{
+        /* display: none; */
+        flex-direction: column;
+    }
+    /* banner */
+    /* subtitle on banner */
+    .hover {
+        font-size: 1.5rem;
+    }
+    img{
+       max-height: 200px;
+       max-width: 200px;
+    }
+    /* my life section */
+    #my-life .my-life-section{
+        flex-direction: column;
+    }
 }
