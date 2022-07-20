@@ -44,7 +44,7 @@ main section {
 /* image banner with name hovers */
 main #banner{
     justify-content: space-around;
-    height: 300px;
+    height: 30rem;
     align-items: end;
     justify-content: end;
     background-image: url(../images/cambodia.jpeg);
@@ -105,11 +105,24 @@ main section div, main section ul, main section form{
 main #my-projects .project-list{
     display: flex;
    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-main #my-projects .project-list section{
+main #my-projects .project-list div{
     display:flex;
     flex-direction: column;
+}
+main #my-projects .project-list div h3, 
+main #my-projects .project-list div details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#first-project{
+    display: flex;
+}
+#first-project img{
+    width: 100%;
+    height: auto;
 }
 
 /* my life section */
@@ -159,7 +172,7 @@ footer *{
        
         
     }
-    header nav :{
+    header nav {
         /* display: none; */
         flex-direction: column;
     }
@@ -168,12 +181,21 @@ footer *{
     .hover {
         font-size: 1.5rem;
     }
-    img{
-       max-height: 200px;
-       max-width: 200px;
+    .avatar{
+        display: block;
+       height: 150px;
+       width: 150px;
+       margin: 0 auto 0 auto;
     }
     /* my life section */
     #my-life .my-life-section{
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    main #my-projects .project-list{
+        display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
     }
 }
