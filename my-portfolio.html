@@ -13,15 +13,18 @@
 <body>
 
 <header>
-  <h1>Steve Tang</h1>
-  <nav >
-    <!-- add image for hidden menu -->
+  <div id="main">
+    <h1>Steve Tang</h1>
+    <button class="openbutton" onclick="openNav()">&#9776;</button>
+  </div>
+  <div id="sidebar" class="sidebar">
+    <a class="closebutton" onclick="closeNav()">&times;</a>
     <a class="nav" href="/my-portfolio.html">Home</a>
     <a class="nav" href="#my-life">My Life</a>
     <a class="nav" href="#my-projects">Projects</a>
     <a class="nav" href="#skills">Skills</a>
     <a class="nav" href="#contact">Contact</a>
-  </nav>
+  </div>
 </header>
 
 <main>
@@ -43,7 +46,7 @@
           <fieldset>
             <legend>Bio Length:</legend>
             <label for="bio-length">Choose Your Familiarity Level:</label>
-            <select id="familiarity-lvl" name="familiarity-lvl">
+            <select id="familiarityLvl" name="familiarityLvl" onchange="familiarityLvl()">
               <option value="shortest" name="stranger">Stranger</option>
               <option value="short" name="aquaintence">Aquaintence</option>
               <option value="long" name="friend">Friend</option>
@@ -52,33 +55,21 @@
           </fieldset>
         </form>
         <template id="bios">
-          <p data-length="shortest">
-            <strong>Steve Tang</strong> is quiet and reserve.  He enjoys observing the 
-            enviroment and sees what the world has to offer.  
+          <p bioLength="shortest">
+            <strong>Steve Tang</strong> is quiet and reserve.  He enjoys observing the enviroment and sees what the world has to offer.  
           </p>
-          <p data-length="short">
-            <strong>Steve Tang</strong> is friendly and kind.  He is helpful toward 
-            others and eagers to learn new things.  He loves to create and make systems 
-            to impove work and effiecency.  He loves to read in his spare time.
+          <p bioLength="short">
+            <strong>Steve Tang</strong> is friendly and kind.  He is helpful toward others and eagers to learn new things.  He loves to create and make systems to impove work and effiecency.  He loves to read in his spare time.
           </p>
-          <p data-length="long">
-              <strong>Steve Tang</strong> is a jokester.  He loves to joke around and 
-              tease his friends.  His favorite type of beers, by far, are dark beers, 
-              but still enjoys a good IPA.  He is from Massachussetts, so you already 
-              know what are his favorite sport teams, the Celtics and the Patriots.  
-              So please don't tease him about Brady or The 2022 NBA finals. 
+          <p bioLength="long">
+              <strong>Steve Tang</strong> is a jokester.  He loves to joke around and tease his friends.  His favorite type of beers, by far, are dark beers, but still enjoys a good IPA.  He is from Massachussetts, so you already know what are his favorite sport teams, the Celtics and the Patriots. So please don't tease him about Brady or The 2022 NBA finals. 
           </p>
-          <p data-length="longest">
-            <strong>Steve Tang</strong> is a friend that is loyal to a fault.  He 
-            will be there when you are in need.  Once he treates you as family, 
-            he is a guy that will be there no matter what.  He will be there 
-            through thick or thin.  However, he does not take betrayal very lightly.  
-            He has a very small pockets of friends everywhere he goes.
+          <p bioLength="longest">
+            <strong>Steve Tang</strong> is a friend that is loyal to a fault.  He will be there when you are in need.  Once he treates you as family, he is a guy that will be there no matter what.  He will be there through thick or thin.  However, he does not take betrayal very lightly.  He has a very small pockets of friends everywhere he goes.
           </p>
         </template> 
         <p class="bio">
-          <strong>Steve Tang</strong> is quiet and reserve.  He enjoys observing the 
-          enviroment and what the world has to offer.
+          <strong>Steve Tang</strong> is quiet and reserve.  He enjoys observing the enviroment and what the world has to offer.
         </p>
       </div>
     </div>

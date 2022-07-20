@@ -13,31 +13,85 @@
     color: var(--secondary);  
 }
 /* headers*/
-header {
+header #main{
     /*sticky position isn't working for some reason*/
     position: sticky;
     position: -webkit-sticky;
     display: flex;
     justify-content: space-between;
     border-bottom: solid var(--primary);
-    align-items: flex-end;
+    align-items: center;
     background-color: var(--variant2-primary);
     padding-bottom: .5rem;
 }
 header *{
     background-color: var(--variant2-primary);
     Color: var(--secondary);
-    padding: .25rem;
-    margin: .25rem;
-    position: sticky;
-    position: -webkit-sticky;
 }
 header h1{
     font-family: var(--my-font);
     font-weight: bold;
     font-size: 1.5rem;
-    
 }
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: .5rem .5rem .5rem 2rem; 
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: var(--variant-secondary);
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebutton {
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    font-size: 3rem;
+    margin-left: 5rem;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbutton {
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: var(--variant2-primary);
+    color: var(--secondary);
+    padding: .5rem .75rem;
+    border: none;
+  }
+  
+  .openbutton:hover {
+    background-color: var(--variant2-primary);
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+
+
+
+
 main section {
     display: flex;
 }
@@ -49,7 +103,6 @@ main #banner{
     justify-content: end;
     background-image: url(../images/cambodia.jpeg);
     background-size:cover;
-    position: relative;
 }
 
 .hover {
@@ -162,19 +215,27 @@ footer *{
     }
 }
 @media only screen and (max-width: 640px){
-    header {
-        
+    header #main{
+        display:flex;
+        justify-content: space-between;
+
     }
     header *{
-       
+
     }
     header h1{
        
         
     }
-    header nav {
-        /* display: none; */
-        flex-direction: column;
+    .sidebar {
+        padding-top: 1rem;
+    }
+    .sidebar a {
+        font-size: 1rem;
+    }
+    .sidebar .closebutton {
+        font-size: 1.5rem;
+        right: 1rem;
     }
     /* banner */
     /* subtitle on banner */
@@ -198,4 +259,5 @@ footer *{
         flex-wrap: wrap;
         flex-direction: column;
     }
+
 }
