@@ -101,6 +101,7 @@ main #banner{
     align-items: end;
     justify-content: end;
     background-image: url(../images/cambodia.jpeg);
+    /* obtain image at https://cdn.cnn.com/cnnnext/dam/assets/170706112529-cambodia.jpg */
     background-size:100% 100%;
 }
 /* subtitle display*/
@@ -163,21 +164,18 @@ main #my-projects .project-list div{
     flex-direction: column;
     align-items: center;
 }
-#first-project{
-    height: 50%;
-    width: 100%;
+
+#my-projects .project-list img{
+    -webkit-mask-image: linear-gradient(black,transparent);
+    mask-image: linear-gradient(black,transparent);
+    height:25%;
+    width: 25%
 }
 #my-projects #first-project img{
     -webkit-mask-image: linear-gradient(black,transparent);
     mask-image: linear-gradient(black,transparent);
-    width: 80%;
-    height: 50%;
-}
-#my-projects .project-list img{
-    -webkit-mask-image: linear-gradient(black,transparent);
-    mask-image: linear-gradient(black,transparent);
-    width: 25%;
-    height: 25%;
+    height: 80%;
+    width: 60%;
 }
 /* skill section */
 
