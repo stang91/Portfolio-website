@@ -7,17 +7,28 @@
     <title>Skills</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/javascript/javascript.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Skills</h1>
-        <nav>
-            <a href="./my-portfolio.html">Home</a>
-            <a href="./My_Life.html">My Life</a>
-            <a href="./Projects.html">Projects</a>
-            <a href="./Skills.html">Skills</a>
-            <a href="./Contact_Me.html">Contact</a>
+        <div id="main">
+            <button class="openbutton" onclick="openNav()">&#9776;</button>
+            <h1>Skills</h1>
+        </div>
+        <nav id="sidebar" class="sidebar">
+            <a class="closebutton" onclick="closeNav()">&times;</a>
+            <a class="nav" href="./my-portfolio.html">Home</a>
+            <a class="nav" href="./My_Life.html">My Life</a>
+            <a class="nav" href="./Projects.html">Projects</a>
+            <a class="nav" href="./Skills.html">Skills</a>
+            <a class="nav" href="./Contact_Me.html">Contact</a>
         </nav>
     </header>
+
+
+
+    <footer>
+        &copy; <span>Steve Tang</span>
+    </footer>
 </body>
 </html>

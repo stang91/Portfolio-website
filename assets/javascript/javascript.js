@@ -15,6 +15,6 @@ const bios=document.querySelector("#bios").content.cloneNode(!0);
     options=document.querySelector(".my-life-bio-control");
     
 options.addEventListener("change",(e=>{
-    const t=bios.querySelector(`[bioLength=${e.target.value}]`);
-    bioEl.innerHTML=t.innerHTML
-}));
+        const t=bios.querySelector(`[bioLength=${e.target.value}]`);
+        bioEl.innerHTML=t.innerHTML})
+);

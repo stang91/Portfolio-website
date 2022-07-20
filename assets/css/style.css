@@ -13,17 +13,20 @@
     color: var(--secondary);  
 }
 /* headers*/
+
+/* styling title name */
 header #main{
     /*sticky position isn't working for some reason*/
     position: sticky;
     position: -webkit-sticky;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*space between nav icon and title heading*/
     border-bottom: solid var(--primary);
-    align-items: center;
+    align-items: center;/*center align the heading title horizonally*/
     background-color: var(--variant2-primary);
     padding-bottom: .5rem;
 }
+/* styling all containers in header */
 header *{
     background-color: var(--variant2-primary);
     Color: var(--secondary);
@@ -31,63 +34,61 @@ header *{
 header h1{
     font-family: var(--my-font);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .sidebar {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 2; /* Stay on top */
     top: 0;
     left: 0;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding-top: 5rem; /* Place content 5 rem (80px) from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  }
-  
-  /* The sidebar links */
-  .sidebar a {
-    padding: .5rem .5rem .5rem 2rem; 
-    text-decoration: none;
-    font-size: 1.5rem;
+}
+
+/* The sidebar links */
+.sidebar a {
+    padding: .5rem .5rem .5rem 2rem; /*add padding arounnd the nav link*/
+    font-size: 1.25rem;
     display: block;
     transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidebar a:hover {
+}
+
+/* change sidebar link color when hover */
+.sidebar a:hover {
     color: var(--variant-secondary);
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidebar .closebutton {
+}
+
+/* Positioning and style the close button (top right corner) */
+.sidebar .closebutton {
     position: absolute;
     top: 0;
     right: 2rem;
     font-size: 3rem;
     margin-left: 5rem;
-  }
-  
-  /* The button used to open the sidebar */
-  .openbutton {
+}
+/* The button used to open the sidebar */
+.openbutton {
     font-size: 2rem;
     cursor: pointer;
     background-color: var(--variant2-primary);
     color: var(--secondary);
-    padding: .5rem .75rem;
+    padding: .25rem .5rem;
     border: none;
-  }
-  
-  .openbutton:hover {
-    background-color: var(--variant2-primary);
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
+}
+
+.openbutton:hover {
+    background-color: var(--primary);
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
     transition: margin-left .5s; /* If you want a transition effect */
     padding: 20px;
-  }
+}
 
 
 

@@ -11,20 +11,20 @@
   </head>
 
 <body>
-
+<!-- nav bar and sidear -->
 <header>
   <div id="main">
-    <h1>Steve Tang</h1>
     <button class="openbutton" onclick="openNav()">&#9776;</button>
+    <h1>Steve Tang</h1>
   </div>
-  <div id="sidebar" class="sidebar">
+  <nav id="sidebar" class="sidebar">
     <a class="closebutton" onclick="closeNav()">&times;</a>
-    <a class="nav" href="/my-portfolio.html">Home</a>
+    <a class="nav" href="./my-portfolio.html">Home</a>
     <a class="nav" href="#my-life">My Life</a>
     <a class="nav" href="#my-projects">Projects</a>
     <a class="nav" href="#skills">Skills</a>
     <a class="nav" href="#contact">Contact</a>
-  </div>
+  </nav>
 </header>
 
 <main>
@@ -41,7 +41,6 @@
     <div class="my-life-section">
       <img class="avatar" src="./assets/images/Image-2.png" alt="memoji-avatar">
       <div class="my-life-bio-control">
-        <!--create a javascript async with the form, and template to change bio-->
         <form class="bio-length-control" id="biolength">
           <fieldset>
             <legend>Bio Length:</legend>
@@ -107,7 +106,6 @@
       <li>CSS</li>
       <li>Javascript</li>
     </ul>
-    <br><br><br><br><br>
     <!--make some thing cool and interactive with css in skills-->
   </section>
   <section id="contact">

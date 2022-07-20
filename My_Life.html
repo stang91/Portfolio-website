@@ -6,18 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/javascript/javascript.js" defer></script>
     <title>My Life</title>
 </head>
 <body>
     <header>
-        <h1>My Life</h1>
-        <nav>
-            <a href="./my-portfolio.html">Home</a>
-            <a href="./My_Life.html">My Life</a>
-            <a href="./Projects.html">Projects</a>
-            <a href="./Skills.html">Skills</a>
-            <a href="./Contact_Me.html">Contact</a>
+        <div id="main">
+            <button class="openbutton" onclick="openNav()">&#9776;</button>
+            <h1>My Life</h1>
+        </div>
+        <nav id="sidebar" class="sidebar">
+            <a class="closebutton" onclick="closeNav()">&times;</a>
+            <a class="nav" href="./my-portfolio.html">Home</a>
+            <a class="nav" href="./My_Life.html">My Life</a>
+            <a class="nav" href="./Projects.html">Projects</a>
+            <a class="nav" href="./Skills.html">Skills</a>
+            <a class="nav" href="./Contact_Me.html">Contact</a>
         </nav>
     </header>
+    <section id="my-life">
+        <div class="my-life-section">
+          <img class="avatar" src="./assets/images/Image-3.png" alt="memoji-avatar">
+          <div class="my-life-bio-control">
+            <form class="bio-length-control" id="biolength">
+              <fieldset>
+                <legend>Bio Length:</legend>
+                <label for="bio-length">Choose Your Familiarity Level:</label>
+                <select id="familiarityLvl" name="familiarityLvl" onchange="familiarityLvl()">
+                    <option value="shortest" name="stranger">Stranger</option>
+                    <option value="short" name="aquaintence">Aquaintence</option>
+                    <option value="long" name="friend">Friend</option>
+                    <option value="longest" name="da-fam">Da Fam</option>
+                </select>
+              </fieldset>
+            </form>
+            <template id="bios">
+                <p bioLength="shortest">
+                    <strong>Steve Tang</strong> is quiet and reserve.  He enjoys observing the enviroment and sees what the world has to offer.  
+                </p>
+                <p bioLength="short">
+                    <strong>Steve Tang</strong> is friendly and kind.  He is helpful toward others and eagers to learn new things.  He loves to create and make systems to impove work and effiecency.  He loves to read in his spare time.
+                </p>
+                <p bioLength="long">
+                    <strong>Steve Tang</strong> is a jokester.  He loves to joke around and tease his friends.  His favorite type of beers, by far, are dark beers, but still enjoys a good IPA.  He is from Massachussetts, so you already know what are his favorite sport teams, the Celtics and the Patriots. So please don't tease him about Brady or The 2022 NBA finals. 
+                </p>
+                <p bioLength="longest">
+                    <strong>Steve Tang</strong> is a friend that is loyal to a fault.  He will be there when you are in need.  Once he treates you as family, he is a guy that will be there no matter what.  He will be there through thick or thin.  However, he does not take betrayal very lightly.  He has a very small pockets of friends everywhere he goes.
+                </p>
+                </template> 
+                <p class="bio">
+                    <strong>Steve Tang</strong> is quiet and reserve.  He enjoys observing the enviroment and what the world has to offer.
+                </p>
+        </div>
+    </section>
+    <footer>
+        &copy; <span>Steve Tang</span>
+    </footer>
 </body>
 </html>
